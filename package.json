@@ -1,0 +1,40 @@
+{
+  "name": "node-csv2sql",
+  "version": "0.0.1",
+  "description": "Convert csv to sql INSERT, UPDATE, DELETE statement",
+  "bin": {
+    "csv2sql": "bin/csv2sql"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.js",
+    "test:watch": "npm test -- --watch"
+  },
+  "engines": {
+    "node": "^6.9.2"
+  },
+  "keywords": [
+    "csv",
+    "sql",
+    "converter",
+    "csv2sql"
+  ],
+  "author": "katsew",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "jsdom": "^7.2.1",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2"
+  },
+  "dependencies": {
+    "babyparse": "^0.4.6",
+    "commander": "^2.9.0",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.6.1",
+    "through2": "^2.0.1",
+    "vinyl": "^1.1.1",
+    "vinyl-fs": "^2.4.2",
+    "xlsx": "^0.8.0"
+  }
+}

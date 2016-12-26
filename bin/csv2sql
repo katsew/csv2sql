@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const program = require('commander');
+const csv2sql = require('..');
+
+program
+  .version('0.0.1')
+  .arguments('<source> <destination>')
+  .action(function (source, destination) {
+    csv2sql(source, destination);
+  })
+  .parse(process.argv);
